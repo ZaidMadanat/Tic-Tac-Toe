@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body { 
+    height: 100vh; 
+    background-color: #1A2B33;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+html { 
+    height: 100%;
+}
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.header{ 
+    display: flex;
+    justify-content: space-between;
+}
+.title { 
+    margin-left: 15px;
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+    font-size: 2rem;
+}
+.name { 
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+.game { 
+    justify-self: center;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.players { 
+    display: flex;
+    justify-content: space-between;
+}
+.score { 
+    display: flex;
+    gap: 35px;
+}
+.title img { 
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+}
+.gitlogo { 
+    width: 35px;
+    height: 35px;
+}
+.gitlogo:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+  
