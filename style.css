@@ -73,7 +73,12 @@ html {
 .box { 
     width: 90px;
     height: 90px;
-    border: solid 3px white; 
+    border: solid 3px white;
+    font-size: 90px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+
 }
 
 .gitlogo { 
