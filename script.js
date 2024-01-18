@@ -48,6 +48,9 @@ function checkWinner(boxes, playerSign) {
     return false;
 }
 
+function isDraw(boxes) {
+    return [...boxes].every(box => box.textContent !== '') && !checkWinner(boxes, player1.getSign()) && !checkWinner(boxes, player2.getSign());
+}
 function Game() { 
     const sign1 = Math.random() < 0.5? 'X' : 'O';
     const sign2 = (sign1 === 'X') ? 'O' : 'X';
@@ -79,6 +82,11 @@ function Game() {
                 }
                 updateScoreDisplay();
                 alert(currentPlayer.getName() + " wins!");
+                restartGame();
+                return;
+            }
+            else if (isDraw(boxes)) { 
+                alert("It's a draw!");
                 restartGame();
                 return;
             }
